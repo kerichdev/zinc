@@ -16,34 +16,34 @@
     --gap-no-icon: 0.6rem;
 }
 [data-theme="dark"] {
-    --accent: rgb(225, 225, 225);
-    --accent-highlight: rgb(225, 225, 225, 4%);
-    --accent-subtext: rgb(110, 110, 110);
-    --accent-hover: rgb(30, 30, 30);
-    --accent-hover-elevated: rgb(48, 48, 48);
-    --accent-hover-transparent: rgba(48, 48, 48, 0.5);
-    --accent-button: rgb(25, 25, 25);
-    --accent-button-elevated: rgb(42, 42, 42);
-    --glass: rgba(25, 25, 25, 0.85);
-    --glass-lite: rgba(25, 25, 25, 0.98);
-    --subbackground: rgb(10, 10, 10);
-    --background: rgb(0, 0, 0);
-    --background-backdrop: rgba(0, 0, 0, 0.5);
+    --accent: rgb(137, 180, 250);
+    --accent-highlight: rgba(137, 180, 250, .04);
+    --accent-subtext: rgb(205, 214, 244);
+    --accent-hover: rgb(69, 71, 90);
+    --accent-hover-elevated: rgb(88, 91, 112);
+    --accent-hover-transparent: rgba(69, 71, 90, .05);
+    --accent-button: rgb(49, 50, 68);
+    --accent-button-elevated: rgb(69, 71, 90);
+    --glass: rgba(30, 30, 46, .85);
+    --glass-lite: rgba(30, 30, 46, .98);
+    --subbackground: rgb(49, 50, 68);
+    --background: rgb(30, 30, 46);
+    --background-backdrop: rgba(17, 17, 27, .05);
 }
 [data-theme="light"] {
-    --accent: rgb(25, 25, 25);
-    --accent-highlight: rgb(25, 25, 25, 4%);
-    --accent-subtext: rgb(110, 110, 110);
-    --accent-hover: rgb(225, 225, 225);
-    --accent-hover-elevated: rgb(210, 210, 210);
-    --accent-hover-transparent: rgba(215, 215, 215, 0.5);
-    --accent-button: rgb(232, 232, 232);
-    --accent-button-elevated: rgb(215, 215, 215);
-    --glass: rgba(232, 232, 232, 0.85);
-    --glass-lite: rgba(232, 232, 232, 0.98);
-    --subbackground: rgb(240, 240, 240);
-    --background: rgb(255, 255, 255);
-    --background-backdrop: rgba(255, 255, 255, 0.5);
+    --accent: rgb(30, 102, 245);
+    --accent-highlight: rgba(30, 102, 245, .04);
+    --accent-subtext: rgb(76, 79, 105);
+    --accent-hover: rgb(188, 192, 204);
+    --accent-hover-elevated: rgb(172, 176, 190);
+    --accent-hover-transparent: rgba(188, 192, 204, .05);
+    --accent-button: rgb(204, 208, 218);
+    --accent-button-elevated: rgb(188, 192, 204);
+    --glass: rgba(239, 241, 245, .85);
+    --glass-lite: rgba(239, 241, 245, .98);
+    --subbackground: rgb(204, 208, 218);
+    --background: rgb(239, 241, 245);
+    --background-backdrop: rgba(220, 224, 232, .05)
 }
 html,
 body {
