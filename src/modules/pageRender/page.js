@@ -88,8 +88,7 @@ export default function(obj) {
         <meta name="theme-color" content="#000000">
 
         <link rel="preload" href="fonts/notosansmono.css" as="style">
-        <link rel="preload" href="assets/meowbalt/error.png" as="image">
-        <link rel="preload" href="assets/meowbalt/question.png" as="image">
+        <link rel="preload" href="icons/maskable/512.png" as="image">
 
         ${env.plausibleHostname ?
             `<script 
@@ -553,7 +552,7 @@ export default function(obj) {
                     closeAria: t('AccessibilityGoBack'),
                     emoji: `<img class="popout-meowbalt" `
                               + `draggable="false" loading="lazy" `
-                              + `alt="😿" src="assets/meowbalt/question.png">`,
+                              + `alt="😿" src="icons/maskable/512.png">`,
                     title: t('TitlePopupDownload')
                 },
                 body: switcher({
@@ -575,7 +574,7 @@ export default function(obj) {
                 header: {
                     emoji: `<img class="popout-meowbalt" `
                               + `draggable="false" loading="lazy" `
-                              + `alt="😿" src="assets/meowbalt/error.png">`,
+                              + `alt="😿" src="icons/maskable/512.png">`,
                 },
                 body: `<div id="desc-error" class="desc-padding subtext desc-error"></div>`,
                 buttonText: t('ErrorPopupCloseButton')
