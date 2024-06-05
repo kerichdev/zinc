@@ -279,7 +279,7 @@ export default function(obj) {
                         text: `
                         <div class="changelog-banner">
                             <img class="changelog-img" ` +
-                                `src="updateBanners/catsleep.webp" ` +
+                                `src="updateBanners/firstrelease.webp" ` +
                                 `alt="${t("DonateImageDescription")}" ` +
                                 `width="480" ` +
                                 `height="270" ` +

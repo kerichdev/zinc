@@ -58,7 +58,7 @@
         "SettingsOtherTab": "other",
         "ChangelogLastMajor": "current version & commit",
         "AccessibilityModeToggle": "toggle download mode",
-        "DonateLinksDescription": "this is the best way to donate if you want me to receive your donation directly.",
+        "DonateLinksDescription": "this is the best way to donate if you want the original developer to receive your donation directly.",
         "SettingsAudioFormatBest": "best",
         "SettingsAudioFormatDescription": "when \"best\" format is selected, you get audio the way it is on service's side. it's not re-encoded. everything else will be re-encoded.",
         "Keyphrase": "save what you love",
@@ -87,8 +87,8 @@
         "ErrorCantProcess": "i couldn't process your request :(\nyou can try again, but if issue persists, please {ContactLink}.",
         "ChangelogPressToHide": "collapse",
         "Donate": "donate",
-        "DonateSub": "help it stay online",
-        "DonateExplanation": "zinc doesn't shove ads in your face and doesn't sell your personal data, meaning that it's <span class=\"text-backdrop\">completely free to use</span> for everyone. but development and maintenance of a media-heavy service used by over 750k people is quite costly. both in terms of time and money.\n\nif zinc helped you in the past and you want to keep it growing and evolving, you can return the favor by making a donation!\n\nyour donation will help all zinc users: educators, students, content creators, artists, musicians, and many, many more!\n\nin past, donations have let zinc:\n*; increase stability and uptime to nearly 100%.\n*; speed up ALL downloads, especially heavier ones.\n*; open the api for free public use.\n*; withstand several huge user influxes with 0 downtime.\n*; add resource-intensive features (such as gif conversion).\n*; continue improving our infrastructure.\n*; keep developers happy.\n\n<span class=\"text-backdrop\">every cent matters and is extremely appreciated</span>, you can truly make a difference!\n\nif you can't donate, share zinc with a friend! we don't get ads anywhere, so zinc is spread by word of mouth.\nsharing is the easiest way to help achieve the goal of better internet for everyone.",
+        "DonateSub": "support the original cause",
+        "DonateExplanation": "i actually dont really want to take donations for a project i only forked and spun up an instance of so go donate to the original dev instead",
         "DonateVia": "donate via",
         "SettingsVideoMute": "mute audio",
         "SettingsVideoMuteExplanation": "removes audio from video downloads when possible.",
@@ -156,6 +156,6 @@
         "SettingsYoutubeDub": "use browser language",
         "SettingsYoutubeDubDescription": "uses your browser's default language for youtube dubbed audio tracks. works even if zinc ui isn't translated to your language.",
         "ErrorInvalidContentType": "invalid content type header",
-        "UpdateOneMillion": "1 million users and blazing speed"
+        "UpdateOneMillion": "yippee"
     }
 }

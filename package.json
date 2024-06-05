@@ -1,8 +1,8 @@
 {
-    "name": "cobalt",
+    "name": "zinc",
     "description": "save what you love",
-    "version": "7.14.3",
-    "author": "imput",
+    "version": "1: spacetravel",
+    "author": "kerichdev",
     "exports": "./src/cobalt.js",
     "type": "module",
     "engines": {
@@ -17,13 +17,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/imputnet/cobalt.git"
+        "url": "git+https://github.com/kerichdev/zinc.git"
     },
     "license": "AGPL-3.0",
     "bugs": {
-        "url": "https://github.com/imputnet/cobalt/issues"
+        "url": "https://github.com/kerichdev/zinc/issues"
     },
-    "homepage": "https://github.com/imputnet/cobalt#readme",
+    "homepage": "https://github.com/kerichdev/zinc#readme",
     "dependencies": {
         "content-disposition-header": "0.6.0",
         "cors": "^2.8.5",
