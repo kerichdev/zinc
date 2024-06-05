@@ -22,12 +22,12 @@ let final = () => {
     execSync('npm install', { stdio: [0, 1, 2] });
     console.log(`\n\n${Cyan("All done!\n")}`);
     console.log(Bright("You can re-run this script at any time to update the configuration."));
-    console.log(Bright("\nYou're now ready to start cobalt. Simply run ") + Cyan("npm start") + Bright('!\nHave fun :)'));
+    console.log(Bright("\nYou're now ready to start zinc. Simply run ") + Cyan("npm start") + Bright('!\nHave fun :)'));
     rl.close()
 }
 
 console.log(
-    `${Cyan(`Hey, this is cobalt v.${version}!`)}\n${Bright("Let's start by creating a new ")}${Cyan(".env")}${Bright(" file. You can always change it later.")}`
+    `${Cyan(`Hey, this is zinc v.${version}!`)}\n${Bright("Let's start by creating a new ")}${Cyan(".env")}${Bright(" file. You can always change it later.")}`
 )
 
 function setup() {
@@ -36,7 +36,7 @@ function setup() {
     rl.question(q, r1 => {
         switch (r1.toLowerCase()) {
             case 'api':
-                console.log(Bright("\nCool! What's the domain this API instance will be running on? (localhost)\nExample: api.cobalt.tools"));
+                console.log(Bright("\nCool! What's the domain this API instance will be running on? (localhost)\nExample: api.zinc.tools"));
 
                 rl.question(q, apiURL => {
                     ob.API_URL = `http://localhost:9000/`;
@@ -83,13 +83,13 @@ function setup() {
                         if (webPort && (webURL === "localhost" || !webURL)) ob.WEB_URL = `http://localhost:${webPort}/`;
 
                         console.log(
-                            Bright("\nOne last thing: what default API domain should be used? (api.cobalt.tools)\nIf it's hosted locally, make sure to include the port:") + Cyan(" localhost:9000")
+                            Bright("\nOne last thing: what default API domain should be used? (api.zinc.tools)\nIf it's hosted locally, make sure to include the port:") + Cyan(" localhost:9000")
                         );
 
                         rl.question(q, apiURL => {
                             ob.API_URL = `https://${apiURL.toLowerCase()}/`;
                             if (apiURL.includes(':')) ob.API_URL = `http://${apiURL.toLowerCase()}/`;
-                            if (!apiURL) ob.API_URL = "https://api.cobalt.tools/";
+                            if (!apiURL) ob.API_URL = "https://api.zinc.tools/";
                             final()
                         })
                     });

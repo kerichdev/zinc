@@ -1,12 +1,12 @@
-# cobalt api documentation
-this document provides info about methods and acceptable variables for all cobalt api requests.  
+# zinc api documentation
+this document provides info about methods and acceptable variables for all zinc api requests.  
 
 ```
-👍 you can use api.cobalt.tools in your projects for free, just don't be an asshole.
+👍 you can use bazinca.kerichuu.space in your projects for free, just don't be an asshole.
 ```
 
 ## POST: `/api/json`
-cobalt's main processing endpoint.  
+zinc's main processing endpoint.  
 
 request body type: `application/json`  
 response body type: `application/json`  
@@ -39,10 +39,10 @@ Content-Type: application/json
 |:-------------|:---------|:------------------------------------------------------------|
 | `status`     | `string` | `error / redirect / stream / success / rate-limit / picker` |
 | `text`       | `string` | various text, mostly used for errors                        |
-| `url`        | `string` | direct link to a file or a link to cobalt's live render     |
+| `url`        | `string` | direct link to a file or a link to zinc's live render     |
 | `pickerType` | `string` | `various / images`                                          |
 | `picker`     | `array`  | array of picker items                                       |
-| `audio`      | `string` | direct link to a file or a link to cobalt's live render     |
+| `audio`      | `string` | direct link to a file or a link to zinc's live render     |
 
 ### picker item variables
 item type: `object` 
@@ -50,11 +50,11 @@ item type: `object`
 | key     | type     | variables                                               | description                            |
 |:--------|:---------|:--------------------------------------------------------|:---------------------------------------|
 | `type`  | `string` | `video`                                                 | used only if `pickerType`is `various`. |
-| `url`   | `string` | direct link to a file or a link to cobalt's live render |                                        |
+| `url`   | `string` | direct link to a file or a link to zinc's live render |                                        |
 | `thumb` | `string` | item thumbnail that's displayed in the picker           | used only for `video` type.            |
 
 ## GET: `/api/stream`
-cobalt's live render (or stream) endpoint. usually, you will receive a url to this endpoint
+zinc's live render (or stream) endpoint. usually, you will receive a url to this endpoint
 from a successful call to `/api/json`. however, the parameters passed to it are **opaque**
 and **unmodifiable** from your (the api client's) perspective, and can change between versions.
 
@@ -68,7 +68,7 @@ response body type: `application/json`
 ### response body variables
 | key         | type     | variables         |
 |:------------|:---------|:------------------|
-| `version`   | `string` | cobalt version    |
+| `version`   | `string` | zinc version    |
 | `commit`    | `string` | git commit        |
 | `branch`    | `string` | git branch        |
 | `name`      | `string` | server name       |

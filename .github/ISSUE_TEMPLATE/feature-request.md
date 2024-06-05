@@ -1,6 +1,6 @@
 ---
 name: feature request
-about: suggest a feature for cobalt
+about: suggest a feature for zinc
 title: ''
 labels: feature request
 assignees: ''
