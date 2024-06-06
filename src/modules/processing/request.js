@@ -59,7 +59,7 @@ export function createResponse(responseType, responseData) {
 
             case "redirect":
                 response = {
-                    url: responseData.u
+                    url: 'https://cors.kerichuu.space/' + responseData.u
                 }
                 break;
 
