@@ -170,7 +170,6 @@ export default function(obj) {
                 .map(e => {
                     const type = e.node?.is_video ? "video" : "photo";
                     const url = type === "video" ? e.node?.video_url : e.node?.display_url;
-                    alert("old post high branch");
                     return {
                         type, url,
                         /* thumbnails have `Cross-Origin-Resource-Policy`
@@ -186,7 +185,6 @@ export default function(obj) {
 
             if (picker.length) return { picker }
         } else if (data?.gql_data?.shortcode_media?.video_url) {
-            alert("old post low branch");
             return {
                 urls: data.gql_data.shortcode_media.video_url,
                 filename: `instagram_${id}.mp4`,
@@ -210,7 +208,7 @@ export default function(obj) {
                     
                     let url = imageUrl;
                     if (type === 'video') {
-                        alert("new post high branch");
+
                         const video = e.video_versions.reduce((a, b) => a.width * a.height < b.width * b.height ? b : a);
                         url = video.url;
                     }
@@ -231,7 +229,7 @@ export default function(obj) {
             if (picker.length) return { picker }
         } else if (data.video_versions) {
             const video = data.video_versions.reduce((a, b) => a.width * a.height < b.width * b.height ? b : a)
-            alert("new post low branch");
+
             return {
                 urls: video.url,
                 filename: `instagram_${id}.mp4`,
@@ -246,7 +244,6 @@ export default function(obj) {
     }
 
     async function getPost(id) {
-        alert("get post ran");
         let data, result;
         try {
             const cookie = getCookie('instagram');
@@ -328,7 +325,6 @@ export default function(obj) {
         
         if (item.video_versions) {
             const video = item.video_versions.reduce((a, b) => a.width * a.height < b.width * b.height ? b : a)
-            alert("get story ran");
             return {
                 urls: video.url,
                 filename: `instagram_${id}.mp4`,
